@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: service-conumser-loadbalance
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.179.138:8848
+
+server:
+  port: 9000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
