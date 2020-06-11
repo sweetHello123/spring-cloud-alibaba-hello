@@ -1,16 +1,8 @@
 spring:
   application:
-    name: service-conumser-loadbalance
+    name: service-consumer-loadbalance-config
   cloud:
     nacos:
-      discovery:
+      config:
         server-addr: 192.168.179.138:8848
-
-server:
-  port: 9000
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+        file-extension: yaml

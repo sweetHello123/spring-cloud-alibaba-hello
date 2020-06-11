@@ -21,5 +21,4 @@ public class HelloController {
     public String hello(@PathVariable String str) {
         return restTemplate.getForObject("http://service-provider/hello/" + str, String.class);
     }
-
 }

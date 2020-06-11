@@ -1,19 +1,9 @@
+# 默认环境
 spring:
   application:
-    # 服务名
-    name: service-provider
+    name: service-provider-config
   cloud:
     nacos:
-      # 服务注册中心
-      discovery:
+      config:
         server-addr: 192.168.179.138:8848
-
-server:
-  port: 8001
-
-management:
-  # 端点检查（健康检查）
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+        file-extension: yaml
